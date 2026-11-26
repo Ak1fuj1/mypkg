@@ -7,6 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          path: ros2_ws/src/mypkg  #ワークスペースの形でリポジトリを配置
+          path: ros2_ws/robosys2026/src/mypkg  #ワークスペースの形でリポジトリを配置
       - name: build and test
-        run: bash -xv ./ros2_ws/src/mypkg/test/test.bash $GITHUB_WORKSPACE
+        run: bash -xv ./ros2_ws/robosys2026/src/mypkg/test/test.bash $GITHUB_WORKSPACE

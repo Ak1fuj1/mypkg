@@ -2,7 +2,7 @@
 
 dir=~
 [ "$1" != "" ] && dir="$1"   #引数があったらそこをros2_wsのある場所にする
-cd $dir/ros2_ws
+cd $dir/ros2_ws/robosys2026
 source /opt/ros/jazzy/setup.bash
 colcon build
 source install/setup.bash
